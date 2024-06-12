@@ -8,7 +8,7 @@ export function Hero() {
       <BackgroundImage className="-bottom-14 -top-36" />
       <Container className="relative">
         <div className="max-w-2xl mx-auto lg:max-w-4xl lg:px-12">
-          <h1 className="text-5xl font-bold tracking-tighter font-display text-redish sm:text-7xl">
+          <h1 className="font-sans text-5xl font-black tracking-[-0.04em] text-redish sm:text-7xl">
             Hart
             <br />
             <span className="text-blackish">Stories</span>

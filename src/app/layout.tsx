@@ -1,11 +1,12 @@
 import {type Metadata} from 'next'
-import {DM_Sans, Inter} from 'next/font/google'
+import {DM_Sans, Inter, Noto_Serif_JP} from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
 
 const inter = Inter({
   subsets: ['latin'],
+  weight: 'variable',
   display: 'swap',
   variable: '--font-inter',
 })
@@ -15,6 +16,13 @@ const dmSans = DM_Sans({
   weight: ['400', '500', '700'],
   display: 'swap',
   variable: '--font-dm-sans',
+})
+
+const notoSerifJP = Noto_Serif_JP({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+  variable: '--font-noto-serif-jp',
 })
 
 export const metadata: Metadata = {
@@ -38,6 +46,7 @@ export default function RootLayout({
         'h-full bg-whitish antialiased',
         inter.variable,
         dmSans.variable,
+        notoSerifJP.variable
       )}
     >
       <body className="flex min-h-full">

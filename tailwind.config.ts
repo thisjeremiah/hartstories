@@ -31,7 +31,8 @@ export default {
       },
       fontFamily: {
         sans: 'var(--font-inter)',
-        display: 'var(--font-dm-sans)',
+        // display: 'var(--font-dm-sans)',
+        display: 'var(--font-noto-serif-jp)',
       },
       maxWidth: {
         '2xl': '40rem',
