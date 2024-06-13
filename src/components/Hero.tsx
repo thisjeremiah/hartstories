@@ -15,14 +15,14 @@ export function Hero() {
           </h1>
           <div className="mt-6 text-2xl tracking-tight text-blackish space-y-6 font-display">
             <p>
-              Experience Jo-Anne Hart's award-winning solo performance, <span className="font-bold">Friendship: A Love Story</span> —
+              Experience Jo-Anne Hart’s award-winning solo performance, <span className="font-bold">Friendship: A Love Story</span> —
               a powerful exploration of empathy, trauma, and transformation through storytelling.
             </p>
             <p>
               Winner of the <span className="font-bold">Grand Slam Prize</span> at the KO Festival of Performance 2022 and a celebrated storyteller on the <span className="font-bold">Moth</span> stage, Jo-Anne brings her captivating tale of love, bravery, and enduring friendship to life.
             </p>
             <p>
-              Don't miss this moving and intimate performance.
+              Don’t miss this moving and intimate performance.
             </p>
           </div>
           <Button href="#" className="w-full mt-10 sm:hidden">

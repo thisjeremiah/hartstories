@@ -40,7 +40,7 @@ export function BuyTickets() {
                 Get your tickets
               </p>
               <p className="mt-4 text-lg tracking-tight text-whitish">
-                Don't miss Jo-Anne Hart's award-winning solo performance,
+                Don’t miss Jo-Anne Hart’s award-winning solo performance,
                 Friendship: A Love Story, live in Sweden and Norway.
               </p>
             </div>
