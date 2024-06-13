@@ -104,7 +104,7 @@ export function Performances() {
             Live performances
           </h2>
           <p className="mt-4 text-2xl tracking-tight font-display text-blackish">
-            Jo-Anne Hart will perform <span className="font-bold">Friendship: A Love Story</span> this year in Sweden at the <span className="font-bold">Tranås At The Fringe International Arts Festival</span> and at the <span className="font-bold">Oslo Fringe Performing Arts Festival</span> in Norway.
+            Jo-Anne Hart will perform <span className="italic">Friendship: A Love Story</span> this year in Sweden at the <span className="italic">Tranås At The Fringe International Arts Festival</span> and at the <span className="italic">Oslo Fringe Performing Arts Festival</span> in Norway.
           </p>
         </div>
         <TabGroup
