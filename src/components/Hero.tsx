@@ -8,11 +8,9 @@ export function Hero() {
       <BackgroundImage className="-bottom-14 -top-36" />
       <Container className="relative">
         <div className="max-w-2xl mx-auto lg:max-w-4xl lg:px-12">
-          <h1 className="font-sans text-5xl font-black tracking-[-0.04em] text-redish sm:text-7xl">
-            Hart
-            <br />
-            <span className="text-blackish">Stories</span>
-          </h1>
+          <div className="h-[200px]">
+
+          </div>
           <div className="mt-6 text-2xl tracking-tight text-blackish space-y-6 font-display">
             <p>
               Experience Jo-Anne Hart’s award-winning solo performance, <span className="italic">Friendship: A Love Story</span> —
