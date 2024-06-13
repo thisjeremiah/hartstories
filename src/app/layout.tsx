@@ -1,5 +1,5 @@
 import {type Metadata} from 'next'
-import {DM_Sans, Inter, Noto_Serif_JP} from 'next/font/google'
+import {Inter, Noto_Serif_JP} from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -9,13 +9,6 @@ const inter = Inter({
   weight: 'variable',
   display: 'swap',
   variable: '--font-inter',
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-  variable: '--font-dm-sans',
 })
 
 const notoSerifJP = Noto_Serif_JP({
@@ -28,10 +21,10 @@ const notoSerifJP = Noto_Serif_JP({
 export const metadata: Metadata = {
   title: {
     template: '%s - HartStories',
-    default: 'HartStories - A community-driven design conference',
+    default: 'HartStories',
   },
   description:
-    'At HartStories you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+    'Experience Jo-Anne Hart’s award-winning solo performance, Friendship: A Love Story, a powerful exploration of empathy and trauma through storytelling.'
 }
 
 export default function RootLayout({
@@ -45,7 +38,6 @@ export default function RootLayout({
       className={clsx(
         'h-full bg-whitish antialiased',
         inter.variable,
-        dmSans.variable,
         notoSerifJP.variable
       )}
     >

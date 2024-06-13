@@ -15,15 +15,14 @@ export function Hero() {
           </h1>
           <div className="mt-6 text-2xl tracking-tight text-blackish space-y-6 font-display">
             <p>
-              The next generation of web users are tech-savvy and suspicious.
-              They know how to use dev tools, they can detect a phishing scam
-              from a mile away, and they certainly aren’t accepting any checks
-              from Western Union.
+              Experience Jo-Anne Hart's award-winning solo performance, <span className="font-bold">Friendship: A Love Story</span> —
+              a powerful exploration of empathy, trauma, and transformation through storytelling.
             </p>
             <p>
-              At DeceptiConf you’ll learn about the latest dark patterns being
-              developed to trick even the smartest visitors, and you’ll learn
-              how to deploy them without ever being detected.
+              Winner of the <span className="font-bold">Grand Slam Prize</span> at the KO Festival of Performance 2022 and a celebrated storyteller on the <span className="font-bold">Moth</span> stage, Jo-Anne brings her captivating tale of love, bravery, and enduring friendship to life.
+            </p>
+            <p>
+              Don't miss this moving and intimate performance.
             </p>
           </div>
           <Button href="#" className="w-full mt-10 sm:hidden">
@@ -31,10 +30,8 @@ export function Hero() {
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', '18'],
-              ['People Attending', '2,091'],
-              ['Venue', 'Staples Center'],
-              ['Location', 'Los Angeles'],
+              ['Streaming Dates', 'July 16–26'],
+              ['Live Locations', 'Sweden, Norway '],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-blackish">{name}</dt>
@@ -45,7 +42,7 @@ export function Hero() {
             ))}
           </dl>
         </div>
-      </Container>
-    </div>
+      </Container >
+    </div >
   )
 }

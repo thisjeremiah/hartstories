@@ -303,29 +303,28 @@ function ScheduleStatic() {
   )
 }
 
-export function Schedule() {
+export function DescriptionOfPiece() {
   return (
-    <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
+    <section id="description-of-piece" aria-label="Description of piece" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="text-4xl font-medium tracking-tighter font-display text-redish sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+            A Journey of Friendship and Courage
           </h2>
           <p className="mt-4 text-2xl tracking-tight text-blackish font-display">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+            Some of us have had that friend that made you brave, that brought redemption, that changed the course of your life. Filmed before a live theater audience watch this solo performance true story about deepest friendship, shame, and forgiveness. Playing out through time and place, see how love created courage to take up space. To take the stage. And to face death as well as living. Come and share my love and recognize your own.
           </p>
         </div>
       </Container>
-      <div className="relative mt-14 sm:mt-24">
-        <BackgroundImage position="right" className="-bottom-32 -top-40" />
-        <Container className="relative">
-          <ScheduleTabbed />
-          <ScheduleStatic />
-        </Container>
-      </div>
+      {
+        // <div className="relative mt-14 sm:mt-24">
+        // <BackgroundImage position="right" className="-bottom-32 -top-40" />
+        // <Container className="relative">
+        // <ScheduleTabbed />
+        // <ScheduleStatic />
+        // </Container>
+        // </div>
+      }
     </section>
   )
 }

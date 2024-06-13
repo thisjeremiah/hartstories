@@ -22,7 +22,7 @@ export function Sponsors() {
     <section id="sponsors" aria-label="Sponsors" className="py-20 sm:py-32">
       <Container>
         <h2 className="max-w-2xl mx-auto text-4xl font-medium tracking-tighter text-center font-display text-blackish sm:text-5xl">
-          Current sponsorships for our workshops and speakers.
+          Awards and Recognition
         </h2>
         <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
           {sponsors.map((sponsor) => (

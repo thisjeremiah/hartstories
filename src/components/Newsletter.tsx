@@ -19,9 +19,9 @@ function ArrowRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function Newsletter() {
+export function BuyTickets() {
   return (
-    <section id="newsletter" aria-label="Newsletter">
+    <section id="buy-tickets" aria-label="Buy tickets">
       <Container>
         <div className="relative px-4 py-20 -mx-4 overflow-hidden bg-blackish sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           {
@@ -37,32 +37,17 @@ export function Newsletter() {
           <div className="relative max-w-2xl mx-auto grid grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="text-4xl font-medium tracking-tighter font-display text-whitish sm:text-5xl">
-                Stay up to date
+                Get your tickets
               </p>
               <p className="mt-4 text-lg tracking-tight text-whitish">
-                Get updates on all of our events and be the first to get
-                notified when tickets go on sale.
+                Don't miss Jo-Anne Hart's award-winning solo performance,
+                Friendship: A Love Story, live in Sweden and Norway.
               </p>
             </div>
-            <form>
-              <h3 className="text-lg font-semibold tracking-tight text-whitish">
-                Sign up to our newsletter <span aria-hidden="true">&darr;</span>
-              </h3>
-              <div className="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-blackish/5 focus-within:ring-2 focus-within:ring-blackish">
-                <input
-                  type="email"
-                  required
-                  placeholder="Email address"
-                  aria-label="Email address"
-                  className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-blackish placeholder:text-blackish/50 focus:outline-none"
-                />
-                <Button type="submit">
-                  <span className="sr-only sm:not-sr-only">Sign up today</span>
-                  <span className="sm:hidden">
-                    <ArrowRightIcon className="w-6 h-6" />
-                  </span>
-                </Button>
-              </div>
+            <form className="self-end justify-self-center">
+              <Button type="submit">
+                Get your tickets <ArrowRightIcon className="w-6 h-6 ml-2" />
+              </Button>
             </form>
           </div>
         </div>
