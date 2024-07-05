@@ -7,44 +7,44 @@ import clsx from 'clsx'
 
 import {Container} from '@/components/Container'
 import {DiamondIcon} from '@/components/DiamondIcon'
-import joAnneImage from '@/images/avatars/jo-anne.jpg'
+// import joAnneImage1 from '@/images/avatars/jo-anne.jpg'
+import joAnneImage2 from '@/images/image0.jpeg'
+// import joAnneImage3 from '@/images/image1.jpeg'
+import joAnneImage4 from '@/images/image2.jpeg'
+// import joAnneImage5 from '@/images/image3.jpeg'
+// import joAnneImage6 from '@/images/image4.jpeg'
+//
+const speakers = [
+  {
+    name: '',
+    role: '',
+    image: joAnneImage4,
+  },
+  {
+    name: '',
+    role: '',
+    image: joAnneImage2,
+  },
+]
 
 const days = [
   {
-    name: 'Sweden - Tranås At The Fringe',
-    date: 'July 1',
+    name: 'Tranås, Sweden',
+    date: 'June 29, July 1',
     dateTime: '2024-07-01',
-    speakers: [
-      {
-        name: 'Jo-Anne Hart',
-        role: 'Storyteller',
-        image: joAnneImage,
-      },
-    ],
+    speakers
   },
   {
-    name: 'Norway - Oslo Fringe',
-    date: 'July 10',
-    dateTime: '2024-07-10',
-    speakers: [
-      {
-        name: 'Jo-Anne Hart',
-        role: 'Storyteller',
-        image: joAnneImage,
-      },
-    ],
-  },
-  {
-    name: 'Streaming online',
+    name: 'Providence, Rhode Island',
     date: 'July 16-26',
-    dateTime: '2024-07-16',
-    speakers: [
-      {
-        name: 'Jo-Anne Hart',
-        role: 'Storyteller',
-        image: joAnneImage,
-      },
-    ],
+    dateTime: '2024-07-10',
+    speakers
+  },
+  {
+    name: 'Oslo, Norway',
+    date: 'September 7',
+    dateTime: '2024-07-10',
+    speakers
   },
 ]
 
@@ -101,10 +101,10 @@ export function Performances() {
             id="performances-title"
             className="text-4xl font-medium tracking-tighter font-display text-blackish sm:text-5xl"
           >
-            Live performances
+            Performances
           </h2>
           <p className="mt-4 text-2xl tracking-tight font-display text-blackish">
-            Jo-Anne Hart will perform <span className="italic">Friendship: A Love Story</span> this year in Sweden at the <span className="italic">Tranås At The Fringe International Arts Festival</span> and at the <span className="italic">Oslo Fringe Performing Arts Festival</span> in Norway.
+            Jo-Anne Hart will perform <span className="italic">Friendship: A Love Story</span> this year at the <span className="italic">Tranås At The Fringe International Arts Festival</span> in Sweden, the <span className="italic">Oslo Fringe Performing Arts Festival</span> in Norway, and the <span className="italic">Providence Fringe Festival</span> in Rhode Island.
           </p>
         </div>
         <TabGroup
@@ -157,12 +157,12 @@ export function Performances() {
             {days.map((day) => (
               <TabPanel
                 key={day.dateTime}
-                className="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
+                className="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-2"
                 unmount={false}
               >
                 {day.speakers.map((speaker, speakerIndex) => (
                   <div key={speakerIndex}>
-                    <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+                    <div className="group relative h-[25.5rem] transform overflow-hidden rounded-4xl">
                       <div
                         className={clsx(
                           'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
@@ -178,7 +178,7 @@ export function Performances() {
                         style={{clipPath: `url(#${id}-${speakerIndex % 3})`}}
                       >
                         <Image
-                          className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"
+                          className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110 grayscale-[0.3]"
                           src={speaker.image}
                           alt=""
                           priority

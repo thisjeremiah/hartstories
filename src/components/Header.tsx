@@ -25,7 +25,7 @@ export function Header() {
         }
 
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button href="#">Get your tickets</Button>
+          <Button href="https://www.fringepvd.org/friendship-a-love-story.html">Get your tickets</Button>
         </div>
       </Container>
     </header>
