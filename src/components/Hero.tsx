@@ -2,7 +2,8 @@ import {BackgroundImage} from '@/components/BackgroundImage'
 import {Button} from '@/components/Button'
 import {Container} from '@/components/Container'
 import Image from 'next/image'
-import JoAnneToon from '@/images/jo-anne-toon.png'
+import JoAnneToon from '@/images/joanne-sketch-2.png'
+// import JoAnneToon from '@/images/jo-anne-toon.png'
 
 export function Hero() {
   return (
@@ -10,7 +11,7 @@ export function Hero() {
       <BackgroundImage className="-bottom-14 -top-36" />
       <Container className="relative">
         <div className="max-w-2xl mx-auto lg:max-w-4xl lg:px-12">
-          <Image src={JoAnneToon} alt="Jo-Anne Hart" width={300} height={300} className="" />
+          <Image src={JoAnneToon} alt="Jo-Anne Hart" width={400} height={300} className="" />
           <div className="mt-6 text-2xl tracking-tight text-blackish space-y-6 font-display">
             <p>
               Experience Jo-Anne Hart’s solo performance, <span className="italic">Friendship: A Love Story</span> —

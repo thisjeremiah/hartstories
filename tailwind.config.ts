@@ -21,7 +21,7 @@ export default {
     },
     extend: {
       colors: {
-        'redish': '#FF475D',
+        'redish': ' #FF5757',
         'whitish': '#F4F4F4',
         'blackish': '#363636',
       },

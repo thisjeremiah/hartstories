@@ -29,7 +29,7 @@ export function BuyTickets() {
                 Get your tickets
               </p>
               <p className="mt-4 text-lg tracking-tight text-whitish">
-                Don’t miss Jo-Anne Hart’s solo performance,
+                Don’t miss Jo-Anne Hart’s solo performance,{' '}
                 <span className="italic">Friendship: A Love Story</span>, live in Sweden and Norway.
               </p>
               <p className="mt-4 text-lg tracking-tight text-whitish">
@@ -37,8 +37,8 @@ export function BuyTickets() {
               </p>
             </div>
             <form className="flex flex-col items-start self-end flex-1 gap-12 justify-self-center">
-              <Image src={envelopeImg} alt="" className="px-4 rounded-sm rotate-3" />
-              <Button className="mx-4" href="https://www.fringepvd.org/friendship-a-love-story.html" target="_blank">
+              <Image src={envelopeImg} alt="" className="px-4 lg:px-0 grayscale-[0.5] rounded-sm shadow-lg" />
+              <Button className="mx-4 lg:mx-0" href="https://www.fringepvd.org/friendship-a-love-story.html" target="_blank">
                 Get your tickets <ArrowRightIcon className="w-6 h-6 ml-2" />
               </Button>
             </form>
