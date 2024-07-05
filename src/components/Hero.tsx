@@ -3,7 +3,7 @@ import {Button} from '@/components/Button'
 import {Container} from '@/components/Container'
 import Image from 'next/image'
 import JoAnneToon from '@/images/joanne-sketch-2.png'
-// import JoAnneToon from '@/images/jo-anne-toon.png'
+// import JoAnneToon from '@/images/illustration.png'
 
 export function Hero() {
   return (
