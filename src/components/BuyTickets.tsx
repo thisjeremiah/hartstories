@@ -1,5 +1,7 @@
 import {Button} from '@/components/Button'
 import {Container} from '@/components/Container'
+import envelopeImg from '@/images/envelope.jpeg'
+import Image from 'next/image'
 
 function ArrowRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -34,8 +36,9 @@ export function BuyTickets() {
                 A recording of the live show will be streaming online from the Fringe PVD – The Providence Fringe Festival 24/7 for ten days July 16-26th
               </p>
             </div>
-            <form className="self-end justify-self-center">
-              <Button href="https://www.fringepvd.org/friendship-a-love-story.html" target="_blank">
+            <form className="flex flex-col items-start self-end flex-1 gap-12 justify-self-center">
+              <Image src={envelopeImg} alt="" className="px-4 rounded-sm rotate-3" />
+              <Button className="mx-4" href="https://www.fringepvd.org/friendship-a-love-story.html" target="_blank">
                 Get your tickets <ArrowRightIcon className="w-6 h-6 ml-2" />
               </Button>
             </form>
