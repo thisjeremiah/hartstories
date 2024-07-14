@@ -8,11 +8,11 @@ import clsx from 'clsx'
 import {Container} from '@/components/Container'
 import {DiamondIcon} from '@/components/DiamondIcon'
 // import joAnneImage1 from '@/images/avatars/jo-anne.jpg'
-import joAnneImage2 from '@/images/image0.jpeg'
-// import joAnneImage3 from '@/images/image1.jpeg'
-import joAnneImage4 from '@/images/image2.jpeg'
-// import joAnneImage5 from '@/images/image3.jpeg'
-// import joAnneImage6 from '@/images/image4.jpeg'
+import joAnneImage2 from '@/images/image0.jpg'
+// import joAnneImage3 from '@/images/image1.jpg'
+import joAnneImage4 from '@/images/image2.jpg'
+// import joAnneImage5 from '@/images/image3.jpg'
+// import joAnneImage6 from '@/images/image4.jpg'
 //
 const speakers = [
   {
@@ -178,7 +178,7 @@ export function Performances() {
                         style={{clipPath: `url(#${id}-${speakerIndex % 3})`}}
                       >
                         <Image
-                          className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110 grayscale-[0.3]"
+                          className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"
                           src={speaker.image}
                           alt=""
                           priority

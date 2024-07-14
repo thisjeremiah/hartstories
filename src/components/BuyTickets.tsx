@@ -37,7 +37,7 @@ export function BuyTickets() {
               </p>
             </div>
             <form className="flex flex-col items-start self-end flex-1 gap-12 justify-self-center">
-              <Image src={envelopeImg} alt="" className="px-4 lg:px-0 grayscale-[0.5] rounded-sm shadow-lg" />
+              <Image src={envelopeImg} alt="" className="px-4 rounded-sm shadow-lg lg:px-0" />
               <Button className="mx-4 lg:mx-0" href="https://www.fringepvd.org/friendship-a-love-story.html" target="_blank">
                 Get your tickets <ArrowRightIcon className="w-6 h-6 ml-2" />
               </Button>
