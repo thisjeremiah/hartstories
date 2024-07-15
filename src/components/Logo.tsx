@@ -6,7 +6,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
     <Image
       src={HartStoriesLogo}
       alt="Hart Stories"
-      className="w-[11rem]"
+      className="w-[9rem] sm:w-[11rem]"
     />
   )
 }

@@ -30,7 +30,7 @@ export function BuyTickets() {
               </p>
               <p className="mt-6 text-lg tracking-tight text-whitish">
                 Don’t miss Jo-Anne Hart’s solo performance,{' '}
-                <span className="italic">Friendship: A Love Story</span>, live in Sweden and Norway.
+                <span className="italic">Friendship: A Love Story</span>.
               </p>
               <p className="mt-4 text-lg tracking-tight text-whitish">
                 A recording of the live show will be streaming online from the <span className="italic">Fringe PVD – The Providence Fringe Festival</span> 24/7 for ten days, July 16-26.

@@ -7,19 +7,37 @@ import clsx from 'clsx'
 
 import {Container} from '@/components/Container'
 import {DiamondIcon} from '@/components/DiamondIcon'
-import joAnneImage2 from '@/images/image0.jpg'
-import joAnneImage4 from '@/images/image2.jpg'
+import joAnneImage0 from '@/images/image0.jpg'
+import joAnneImage1 from '@/images/image1.jpg'
+import joAnneImage2 from '@/images/image2.jpg'
+import joAnneImage3 from '@/images/image3.jpg'
+import joAnneImage4 from '@/images/image4.jpg'
 
 const speakers = [
-  {
-    name: '',
-    role: '',
-    image: joAnneImage4,
-  },
+  // {
+  // name: '',
+  // role: '',
+  // image: joAnneImage1,
+  // },
   {
     name: '',
     role: '',
     image: joAnneImage2,
+  },
+  // {
+  // name: '',
+  // role: '',
+  // image: joAnneImage3,
+  // },
+  // {
+  // name: '',
+  // role: '',
+  // image: joAnneImage4,
+  // },
+  {
+    name: '',
+    role: '',
+    image: joAnneImage0,
   },
 ]
 

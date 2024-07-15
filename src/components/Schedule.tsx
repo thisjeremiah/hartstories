@@ -6,6 +6,8 @@ import clsx from 'clsx'
 
 import {BackgroundImage} from '@/components/BackgroundImage'
 import {Container} from '@/components/Container'
+import Image from 'next/image'
+import joAnneImage4 from '@/images/image4.jpg'
 
 interface Day {
   date: React.ReactNode
@@ -306,15 +308,16 @@ function ScheduleStatic() {
 export function DescriptionOfPiece() {
   return (
     <section id="description-of-piece" aria-label="Description of piece" className="py-20 sm:py-32">
-      <Container className="relative z-10">
+      <Container className="relative z-10 flex flex-col-reverse items-start md:flex-row-reverse gap-16">
         <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="text-4xl font-medium tracking-tighter font-display text-redish sm:text-5xl">
             A Journey of Friendship and Courage
           </h2>
           <p className="mt-4 text-2xl tracking-tight text-blackish font-display">
-            Some of us have had that friend that made you brave, that brought redemption, that changed the course of your life. Filmed before a live theater audience watch this solo performance true story about deepest friendship, shame, and forgiveness. Playing out through time and place, see how love created courage to take up space. To take the stage. And to face death as well as living. Come and share my love and recognize your own.
+            “Some of us have had that friend that made you brave, that brought redemption, that changed the course of your life. Filmed before a live theater audience watch this solo performance true story about deepest friendship, shame, and forgiveness. Playing out through time and place, see how love created courage to take up space. To take the stage. And to face death as well as living. Come and share my love and recognize your own.”
           </p>
         </div>
+        <Image alt="" className="w-full mx-auto max-w-[30rem] md:w-[20rem] lg:w-[30rem] rounded-xl" src={joAnneImage4} />
       </Container>
       {
         // <div className="relative mt-14 sm:mt-24">
