@@ -5,9 +5,9 @@ type ButtonProps =
   | React.ComponentPropsWithoutRef<typeof Link>
   | (React.ComponentPropsWithoutRef<'button'> & {href?: undefined})
 
-export function Button({className, ...props}: ButtonProps) {
+function ImplButton({className, ...props}: ButtonProps) {
   className = clsx(
-    'inline-flex justify-center rounded-2xl bg-redish p-4 text-base font-semibold text-whitish hover:bg-redish/90 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blackish/50 active:text-whitish/70',
+    'inline-flex justify-center rounded-lg p-4 text-base font-semibold text-whitish focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blackish/50 active:text-whitish/70',
     className,
   )
 
@@ -16,4 +16,18 @@ export function Button({className, ...props}: ButtonProps) {
   ) : (
     <Link className={className} {...props} />
   )
+}
+
+export function Button({
+  className,
+  ...props
+}: ButtonProps) {
+  return <ImplButton className={clsx('bg-blackish hover:bg-blackish/90', className)} {...props} />
+}
+
+export function RedButton({
+  className,
+  ...props
+}: ButtonProps) {
+  return <ImplButton className={clsx('bg-redish hover:bg-redish/90', className)} {...props} />
 }

@@ -7,13 +7,9 @@ import clsx from 'clsx'
 
 import {Container} from '@/components/Container'
 import {DiamondIcon} from '@/components/DiamondIcon'
-// import joAnneImage1 from '@/images/avatars/jo-anne.jpg'
 import joAnneImage2 from '@/images/image0.jpg'
-// import joAnneImage3 from '@/images/image1.jpg'
 import joAnneImage4 from '@/images/image2.jpg'
-// import joAnneImage5 from '@/images/image3.jpg'
-// import joAnneImage6 from '@/images/image4.jpg'
-//
+
 const speakers = [
   {
     name: '',
@@ -92,7 +88,7 @@ export function Performances() {
     <section
       id="performances"
       aria-labelledby="performances-title"
-      className="py-20 sm:py-32"
+      className="py-20 sm:py-32 bg-pink"
     >
       <ImageClipPaths id={id} />
       <Container>
@@ -104,7 +100,7 @@ export function Performances() {
             Performances
           </h2>
           <p className="mt-4 text-2xl tracking-tight font-display text-blackish">
-            Jo-Anne Hart will perform <span className="italic">Friendship: A Love Story</span> this year at the <span className="italic">Tranås At The Fringe International Arts Festival</span> in Sweden, the <span className="italic">Oslo Fringe Performing Arts Festival</span> in Norway, and the <span className="italic">Providence Fringe Festival</span> in Rhode Island.
+            Jo-Anne Hart will perform <span className="italic">Friendship: A Love Story</span> this year at the <span className="italic">Tranås At The Fringe International Arts Festival</span> in Sweden, the <span className="italic">Providence Fringe Festival</span> in Rhode Island, and the <span className="italic">Oslo Fringe Performing Arts Festival</span> in Norway.
           </p>
         </div>
         <TabGroup
@@ -121,21 +117,17 @@ export function Performances() {
                       <DiamondIcon
                         className={clsx(
                           'absolute left-[-0.5px] top-[0.5625rem] hidden h-1.5 w-1.5 overflow-visible lg:block',
-                          dayIndex === selectedIndex
-                            ? 'fill-redish stroke-redish'
-                            : 'fill-transparent stroke-redish/50',
+                          'bg-blackish',
                         )}
                       />
                       <div className="relative">
                         <div
                           className={clsx(
-                            'font-mono text-sm',
-                            dayIndex === selectedIndex
-                              ? 'text-blackish'
-                              : 'text-blackish/80',
+                            'font-sans text-sm',
+                            'text-blackish'
                           )}
                         >
-                          <Tab className="ui-not-focus-visible:outline-none">
+                          <Tab className="cursor-default ui-not-focus-visible:outline-none">
                             <span className="absolute inset-0" />
                             {day.name}
                           </Tab>
@@ -162,10 +154,10 @@ export function Performances() {
               >
                 {day.speakers.map((speaker, speakerIndex) => (
                   <div key={speakerIndex}>
-                    <div className="group relative h-[25.5rem] transform overflow-hidden rounded-4xl">
+                    <div className="group relative h-[25.5rem] transform overflow-hidden rounded-xl">
                       <div
                         className={clsx(
-                          'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
+                          'absolute bottom-6 left-0 right-4 top-0 rounded-xl border transition duration-300 group-hover:scale-95 xl:right-6',
                           [
                             'border-redish',
                             'border-blackish',
@@ -175,7 +167,8 @@ export function Performances() {
                       />
                       <div
                         className="absolute inset-0 bg-indigo-50"
-                        style={{clipPath: `url(#${id}-${speakerIndex % 3})`}}
+                      // Clip path
+                      // style={{clipPath: `url(#${id}-${speakerIndex % 3})`}}
                       >
                         <Image
                           className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"

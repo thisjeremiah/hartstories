@@ -1,5 +1,5 @@
 import {BackgroundImage} from '@/components/BackgroundImage'
-import {Button} from '@/components/Button'
+import {Button, RedButton} from '@/components/Button'
 import {Container} from '@/components/Container'
 import Image from 'next/image'
 // import JoAnneToon from '@/images/joanne-sketch-2.png'
@@ -21,8 +21,7 @@ export function Hero() {
               Winner of the <span className="italic">Grand Slam Prize</span> at the KO Festival of Performance 2022 and a storyteller on the <span className="italic">Moth</span> stage, Jo-Anne brings her captivating tale of love, bravery, and enduring friendship to life.
             </p>
           </div>
-          <Button href="https://www.fringepvd.org/friendship-a-love-story.html" target="_blank" className="w-full mt-10 sm:hidden">
-            Get your tickets
+          <Button href="https://www.fringepvd.org/friendship-a-love-story.html" target="_blank" className="w-full mt-10 sm:hidden"> Get your tickets!
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
@@ -30,7 +29,7 @@ export function Hero() {
               ['Live Performances', 'Sweden, Norway'],
             ].map(([name, value]) => (
               <div key={name}>
-                <dt className="font-mono text-sm text-blackish">{name}</dt>
+                <dt className="font-sans text-sm text-blackish">{name}</dt>
                 <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-blackish">
                   {value}
                 </dd>
