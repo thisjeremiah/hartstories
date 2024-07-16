@@ -1,4 +1,4 @@
-import HartStoriesLogo from '@/images/logo.svg'
+import HartStoriesLogo from '@/images/hartstorieslogo.svg'
 import Image from 'next/image'
 
 export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
