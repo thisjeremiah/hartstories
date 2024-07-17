@@ -8,32 +8,14 @@ import clsx from 'clsx'
 import {Container} from '@/components/Container'
 import {DiamondIcon} from '@/components/DiamondIcon'
 import joAnneImage0 from '@/images/image0.jpg'
-import joAnneImage1 from '@/images/image1.jpg'
 import joAnneImage2 from '@/images/image2.jpg'
-import joAnneImage3 from '@/images/image3.jpg'
-import joAnneImage4 from '@/images/image4.jpg'
 
 const speakers = [
-  // {
-  // name: '',
-  // role: '',
-  // image: joAnneImage1,
-  // },
   {
     name: '',
     role: '',
     image: joAnneImage2,
   },
-  // {
-  // name: '',
-  // role: '',
-  // image: joAnneImage3,
-  // },
-  // {
-  // name: '',
-  // role: '',
-  // image: joAnneImage4,
-  // },
   {
     name: '',
     role: '',
@@ -126,24 +108,19 @@ export function Performances() {
           vertical={tabOrientation === 'vertical'}
         >
           <div className="relative flex pb-4 -mx-4 overflow-x-auto sm:mx-0 sm:block sm:overflow-visible sm:pb-0">
-            <div className="absolute bottom-0 left-0.5 top-2 hidden w-px bg-slate-200 lg:block" />
+            <div className="absolute bottom-0 hidden w-px top-2 bg-blackish lg:block" />
             <TabList className="justify-start px-4 grid auto-cols-auto grid-flow-col gap-x-8 gap-y-10 whitespace-nowrap sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({selectedIndex}) => (
                 <>
-                  {days.map((day, dayIndex) => (
+                  {days.map((day) => (
                     <div key={day.dateTime} className="relative lg:pl-8">
                       <DiamondIcon
-                        className={clsx(
-                          'absolute left-[-0.5px] top-[0.5625rem] hidden h-1.5 w-1.5 overflow-visible lg:block',
-                          'bg-blackish',
-                        )}
+                        className=
+                        'absolute left-[-1.4px] top-[0.5625rem] hidden h-1.5 w-1.5 overflow-visible lg:block bg-blackish'
                       />
                       <div className="relative">
                         <div
-                          className={clsx(
-                            'font-sans text-sm',
-                            'text-blackish'
-                          )}
+                          className='font-sans text-sm text-blackish'
                         >
                           <Tab className="cursor-default ui-not-focus-visible:outline-none">
                             <span className="absolute inset-0" />

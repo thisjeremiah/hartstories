@@ -24,7 +24,7 @@ export default {
         'redish': ' #FF5757',
         'whitish': '#F4F4F4',
         'blackish': '#363636',
-        'pink': '#FFEFEE',
+        'pink': '#FCE7E3',
       },
       borderRadius: {
         '4xl': '2rem',

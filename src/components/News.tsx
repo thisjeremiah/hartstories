@@ -314,13 +314,12 @@ export function News() {
           <h2 className="text-3xl font-medium tracking-tighter font-display text-blackish sm:text-5xl">
             News
           </h2>
-          <div className="flex flex-col justify-between flex-1 sm:flex-row gap-0">
+          <div className="flex flex-col justify-between flex-1 lg:flex-row gap-16">
             <div>
               <h3 className="mt-8 text-2xl font-semibold tracking-tight text-blackish">
                 Upcoming events
               </h3>
-              <div className="flex mt-4 text-xl tracking-tight gap-6 sm:text-2xl text-blackish font-display">
-                <Image alt="" className="w-16 h-16 mt-2 rounded-full sm:w-20 sm:h-20 bg-blackish grayscale" src={osfrImg} />
+              <div className="flex mt-4 text-xl tracking-tight gap-1 sm:gap-6 sm:text-2xl text-blackish font-display">
                 <div>
                   <p>
                     Oslo Fringe Performance
@@ -335,6 +334,7 @@ export function News() {
                     September 7, 2024 @ 2pm
                   </p>
                 </div>
+                <Image alt="" className="w-24 h-24 mt-2 rounded-full bg-blackish grayscale" src={osfrImg} />
               </div>
             </div>
             <div>
