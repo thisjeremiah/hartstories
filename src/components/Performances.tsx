@@ -113,11 +113,11 @@ export function Performances() {
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2
             id="performances-title"
-            className="text-4xl font-medium tracking-tighter font-display text-blackish sm:text-5xl"
+            className="text-3xl font-medium tracking-tighter font-display text-blackish sm:text-5xl"
           >
             Performances
           </h2>
-          <p className="mt-4 text-2xl tracking-tight font-display text-blackish">
+          <p className="mt-4 text-xl tracking-tight sm:text-2xl font-display text-blackish">
             Jo-Anne Hart will perform <span className="italic">Friendship: A Love Story</span> this year at the <span className="italic">Tranås At The Fringe International Arts Festival</span> in Sweden, the <span className="italic">Providence Fringe Festival</span> in Rhode Island, and the <span className="italic">Oslo Fringe Performing Arts Festival</span> in Norway.
           </p>
         </div>

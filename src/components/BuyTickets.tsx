@@ -25,7 +25,7 @@ export function BuyTickets() {
         <div className="relative px-4 py-20 -mx-4 overflow-hidden bg-blackish sm:-mx-6 sm:px-6 md:mx-0 md:rounded-xl md:px-16 xl:px-24 xl:py-36">
           <div className="relative max-w-2xl mx-auto grid grid-cols-1 gap-x-24 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="text-4xl font-medium tracking-tighter font-display text-whitish sm:text-5xl">
+              <p className="text-3xl font-medium tracking-tighter font-display text-whitish sm:text-5xl">
                 Get your tickets
               </p>
               <p className="mt-6 text-lg tracking-tight text-whitish">

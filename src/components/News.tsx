@@ -8,6 +8,7 @@ import {BackgroundImage} from '@/components/BackgroundImage'
 import {Container} from '@/components/Container'
 import Image from 'next/image'
 import joAnneImage4 from '@/images/image4.jpg'
+import osfrImg from '@/images/osfr.png'
 
 interface Day {
   date: React.ReactNode
@@ -305,29 +306,53 @@ function ScheduleStatic() {
   )
 }
 
-export function DescriptionOfPiece() {
+export function News() {
   return (
-    <section id="description-of-piece" aria-label="Description of piece" className="py-20 sm:py-32">
-      <Container className="relative z-10 flex flex-col-reverse items-start md:flex-row-reverse gap-16">
-        <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="text-3xl font-medium tracking-tighter font-display text-redish sm:text-5xl">
-            A Journey of Friendship and Courage
+    <section id="news" aria-label="News" className="py-20 sm:py-32">
+      <Container className="relative z-10 flex">
+        <div className="flex-1">
+          <h2 className="text-3xl font-medium tracking-tighter font-display text-blackish sm:text-5xl">
+            News
           </h2>
-          <p className="mt-4 text-xl tracking-tight sm:text-2xl text-blackish font-display">
-            “Some of us have had that friend that made you brave, that brought redemption, that changed the course of your life. Filmed before a live theater audience watch this solo performance true story about deepest friendship, shame, and forgiveness. Playing out through time and place, see how love created courage to take up space. To take the stage. And to face death as well as living. Come and share my love and recognize your own.”
-          </p>
+          <div className="flex flex-col justify-between flex-1 sm:flex-row gap-0">
+            <div>
+              <h3 className="mt-8 text-2xl font-semibold tracking-tight text-blackish">
+                Upcoming events
+              </h3>
+              <div className="flex mt-4 text-xl tracking-tight gap-6 sm:text-2xl text-blackish font-display">
+                <Image alt="" className="w-16 h-16 mt-2 rounded-full sm:w-20 sm:h-20 bg-blackish grayscale" src={osfrImg} />
+                <div>
+                  <p>
+                    Oslo Fringe Performance
+                  </p>
+                  <a className="italic underline underline-offset-2" href="https://www.oslofringe.no/friendship-a-love-story" target="_blank" rel="noopener noreferrer">
+                    Friendship: A Love Story
+                  </a>
+                  <p className="italic">
+                    Salt Theater, Den Arktiske Hovedscena, Oslo
+                  </p>
+                  <p>
+                    September 7, 2024 @ 2pm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="mt-8 text-2xl font-semibold tracking-tight text-blackish">
+                Past events
+              </h3>
+              <div className="mt-4 text-xl tracking-tight sm:text-2xl text-blackish font-display">
+                <p>
+                  Tranås At The Fringe International Arts Festival
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <Image alt="" className="w-full mx-auto max-w-[30rem] md:w-[20rem] lg:w-[30rem] rounded-xl" src={joAnneImage4} />
+        {
+          // <Image alt="" className="w-full mx-auto max-w-[30rem] md:w-[20rem] lg:w-[30rem] rounded-xl" src={joAnneImage4} />
+        }
       </Container>
-      {
-        // <div className="relative mt-14 sm:mt-24">
-        // <BackgroundImage position="right" className="-bottom-32 -top-40" />
-        // <Container className="relative">
-        // <ScheduleTabbed />
-        // <ScheduleStatic />
-        // </Container>
-        // </div>
-      }
     </section>
   )
 }

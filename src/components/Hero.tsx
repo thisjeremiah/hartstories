@@ -7,11 +7,11 @@ import JoAnneToon from '@/images/illustration.png'
 
 export function Hero() {
   return (
-    <div className="relative pt-24 pb-10 sm:pt-24">
+    <div className="relative pt-20 pb-10 sm:pt-24">
       <Container className="relative">
         <div className="flex flex-col items-center max-w-2xl mx-auto sm:items-start lg:max-w-4xl lg:px-12">
-          <Image src={JoAnneToon} alt="Jo-Anne Hart" className="w-[55vw] sm:w-[370px]" />
-          <div className="mt-6 text-2xl tracking-tight text-blackish space-y-6 font-display">
+          <Image src={JoAnneToon} alt="Jo-Anne Hart" className="w-[60vw] sm:w-[370px]" />
+          <div className="mt-6 text-xl tracking-tight sm:text-2xl text-blackish space-y-6 font-display">
             <p>
               Experience Jo-Anne Hart’s solo performance, <span className="italic">Friendship: A Love Story</span> —
               a powerful exploration of empathy, trauma, and transformation through storytelling.
