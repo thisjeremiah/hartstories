@@ -1,11 +1,11 @@
 'use client'
 
-import {useEffect, useState} from 'react'
-import {Tab, TabGroup, TabList, TabPanel, TabPanels} from '@headlessui/react'
+import { useEffect, useState } from 'react'
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
-import {BackgroundImage} from '@/components/BackgroundImage'
-import {Container} from '@/components/Container'
+import { BackgroundImage } from '@/components/BackgroundImage'
+import { Container } from '@/components/Container'
 import Image from 'next/image'
 import joAnneImage4 from '@/images/image4.jpg'
 import osfrImg from '@/images/osfr.png'
@@ -181,7 +181,7 @@ function ScheduleTabbed() {
   useEffect(() => {
     let smMediaQuery = window.matchMedia('(min-width: 640px)')
 
-    function onMediaQueryChange({matches}: {matches: boolean}) {
+    function onMediaQueryChange({ matches }: { matches: boolean }) {
       setTabOrientation(matches ? 'vertical' : 'horizontal')
     }
 
@@ -195,11 +195,11 @@ function ScheduleTabbed() {
 
   return (
     <TabGroup
-      className="max-w-2xl mx-auto grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"
+      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"
       vertical={tabOrientation === 'vertical'}
     >
-      <TabList className="flex pb-4 pl-4 -mx-4 overflow-x-auto gap-x-4 gap-y-10 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
-        {({selectedIndex}) => (
+      <TabList className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
+        {({ selectedIndex }) => (
           <>
             {schedule.map((day, dayIndex) => (
               <div
@@ -239,7 +239,7 @@ function ScheduleTabbed() {
   )
 }
 
-function DaySummary({day}: {day: Day}) {
+function DaySummary({ day }: { day: Day }) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-blackish">
@@ -252,7 +252,7 @@ function DaySummary({day}: {day: Day}) {
   )
 }
 
-function TimeSlots({day, className}: {day: Day; className?: string}) {
+function TimeSlots({ day, className }: { day: Day; className?: string }) {
   return (
     <ol
       role="list"
@@ -267,7 +267,7 @@ function TimeSlots({day, className}: {day: Day; className?: string}) {
           aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} PST`}
         >
           {timeSlotIndex > 0 && (
-            <div className="w-48 h-px mx-auto mb-8 bg-indigo-500/10" />
+            <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
           <h4 className="text-lg font-semibold tracking-tight text-blackish">
             {timeSlot.name}
@@ -311,39 +311,48 @@ export function News() {
     <section id="news" aria-label="News" className="py-20 sm:py-32">
       <Container className="relative z-10 flex">
         <div className="flex-1">
-          <h2 className="text-3xl font-medium tracking-tighter font-display text-blackish sm:text-5xl">
+          <h2 className="font-display text-3xl font-medium tracking-tighter text-blackish sm:text-5xl">
             News
           </h2>
-          <div className="flex flex-col justify-between flex-1 lg:flex-row gap-16">
+          <div className="flex flex-1 flex-col justify-between gap-16 lg:flex-row">
             <div>
               <h3 className="mt-8 text-2xl font-semibold tracking-tight text-blackish">
                 Upcoming events
               </h3>
-              <div className="flex mt-4 text-xl tracking-tight gap-1 sm:gap-6 sm:text-2xl text-blackish font-display">
+              <div className="mt-4 flex gap-1 font-display text-xl tracking-tight text-blackish sm:gap-6 sm:text-2xl">
                 <div>
-                  <p>
-                    Oslo Fringe Performance
-                  </p>
-                  <a className="italic underline underline-offset-2" href="https://www.oslofringe.no/friendship-a-love-story" target="_blank" rel="noopener noreferrer">
+                  <p>Oslo Fringe Performance</p>
+                  <a
+                    className="italic underline underline-offset-2"
+                    href="https://www.oslofringe.no/friendship-a-love-story"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Friendship: A Love Story
                   </a>
                   <p className="italic">
                     Salt Theater, Den Arktiske Hovedscena, Oslo
                   </p>
-                  <p>
-                    September 7, 2024 @ 2pm
-                  </p>
+                  <p>September 7, 2024 @ 2pm</p>
                 </div>
-                <Image alt="" className="w-24 h-24 mt-2 rounded-full bg-blackish grayscale" src={osfrImg} />
+                <Image
+                  alt=""
+                  className="mt-2 h-24 w-24 rounded-full bg-blackish grayscale"
+                  src={osfrImg}
+                />
               </div>
             </div>
             <div>
               <h3 className="mt-8 text-2xl font-semibold tracking-tight text-blackish">
                 Past events
               </h3>
-              <div className="mt-4 text-xl tracking-tight sm:text-2xl text-blackish font-display">
-                <p>
-                  Tranås At The Fringe International Arts Festival
+              <div className="mt-4 font-display text-xl tracking-tight text-blackish sm:text-2xl">
+                <p>Tranås At The Fringe International Arts Festival</p>
+              </div>
+              <div className="mt-4 font-display text-xl tracking-tight text-blackish sm:text-2xl">
+                <p>PVD Fringe Festival</p>
+                <p className="text-lg">
+                  Won <i>Best Solo Performance</i> and <i>Best Love Story</i>
                 </p>
               </div>
             </div>
