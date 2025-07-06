@@ -13,7 +13,7 @@ export function Header() {
 
         <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-blackish/30 py-4 font-sans text-sm text-blackish sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
           <div className="mx-auto flex items-center gap-4 px-4">
-            <p>Travel "Whore": The backside of international relations</p>
+            <p>Travel “Whore”: The backside of international relations</p>
             <DiamondIcon className="h-1.5 w-1.5 overflow-visible bg-current" />
             <p>
               July 24 @ 8:30PM

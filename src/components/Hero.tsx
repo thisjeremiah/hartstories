@@ -23,7 +23,7 @@ export function Hero() {
           <div className="mt-6 space-y-6 font-display text-xl tracking-tight text-blackish sm:text-2xl">
             <p>
               Experience Jo-Anne Hart’s solo performance,{' '}
-              <span className="italic">Travel "Whore": The backside of international relations </span>
+              <span className="italic">Travel “Whore”: The backside of international relations </span>
               — a
               powerful exploration of empathy, trauma, and transformation
               through storytelling.

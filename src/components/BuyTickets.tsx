@@ -31,7 +31,7 @@ export function BuyTickets() {
               <p className="mt-6 text-lg tracking-tight text-whitish">
                 Don’t miss Jo-Anne Hart’s solo performance,{' '}
                 <span className="italic">
-Travel Whore: The Backside of International Relations
+Travel “Whore”: The Backside of International Relations
 </span>.
               </p>
             </div>

@@ -328,7 +328,7 @@ export function News() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Travel "Whore": The backside of international relations
+                    Travel “Whore”: The backside of international relations
                   </a>
                   <p className="italic">
                     Teatro ECAS Theater, Rhode Island

@@ -88,7 +88,7 @@ export function Performances() {
             Performances
           </h2>
           <p className="mt-4 text-xl tracking-tight sm:text-2xl font-display text-blackish">
-            Jo-Anne Hart will perform <span className="italic">Travel "Whore": The backside of international relations</span> this year at the <span className="italic">Teatro ECAS Fringe Festival</span> in Rhode Island.
+            Jo-Anne Hart will perform <span className="italic">Travel “Whore”: The backside of international relations</span> this year at the <span className="italic">Teatro ECAS Fringe Festival</span> in Rhode Island.
           </p>
         </div>
         <TabGroup
