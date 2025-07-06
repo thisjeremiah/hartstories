@@ -7,7 +7,7 @@ import clsx from 'clsx'
 import {BackgroundImage} from '@/components/BackgroundImage'
 import {Container} from '@/components/Container'
 import Image from 'next/image'
-import joAnneImage4 from '@/images/image4.jpg'
+import joAnneImage3 from '@/images/jo-anne-3.jpg'
 
 interface Day {
   date: React.ReactNode
@@ -314,10 +314,10 @@ export function DescriptionOfPiece() {
             A Journey of Friendship and Courage
           </h2>
           <p className="mt-4 text-xl tracking-tight sm:text-2xl text-blackish font-display">
-            “Some of us have had that friend that made you brave, that brought redemption, that changed the course of your life. Filmed before a live theater audience watch this solo performance true story about deepest friendship, shame, and forgiveness. Playing out through time and place, see how love created courage to take up space. To take the stage. And to face death as well as living. Come and share my love and recognize your own.”
+            Finding the funny in foreign policy. In this solo storytelling romp, Jo-Anne Hart uses her real experiences (including being taken for a prostitute) in settings including the end days of the Soviet Union; dining with the President of Iran; and landing on an aircraft carrier at sea to brief US naval leaders – to show us the laugh-out-loud backstage of missteps, insecurities, and costuming disasters. Come cringe, howl, and gape at these confessions from a hard-working travel whore.​
           </p>
         </div>
-        <Image alt="" className="w-full mx-auto max-w-[30rem] md:w-[20rem] lg:w-[30rem] rounded-xl" src={joAnneImage4} />
+        <Image alt="" className="grayscale w-full mx-auto max-w-[30rem] md:w-[20rem] lg:w-[30rem] rounded-xl" src={joAnneImage3} />
       </Container>
       {
         // <div className="relative mt-14 sm:mt-24">

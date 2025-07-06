@@ -7,39 +7,27 @@ import clsx from 'clsx'
 
 import {Container} from '@/components/Container'
 import {DiamondIcon} from '@/components/DiamondIcon'
-import joAnneImage0 from '@/images/image0.jpg'
-import joAnneImage2 from '@/images/image2.jpg'
+import joAnneImage1 from '@/images/jo-anne-1.jpg'
+import joAnneImage2 from '@/images/jo-anne-2.jpg'
 
 const speakers = [
   {
     name: '',
     role: '',
-    image: joAnneImage2,
+    image: joAnneImage1,
   },
   {
     name: '',
     role: '',
-    image: joAnneImage0,
+    image: joAnneImage2,
   },
 ]
 
 const days = [
   {
-    name: 'Tranås, Sweden',
-    date: 'June 29, July 1',
-    dateTime: '2024-07-01',
-    speakers
-  },
-  {
-    name: 'Providence, Rhode Island',
-    date: 'July 16-26',
-    dateTime: '2024-07-10',
-    speakers
-  },
-  {
-    name: 'Oslo, Norway',
-    date: 'September 7',
-    dateTime: '2024-07-10',
+    name: 'Rhode Island',
+    date: 'June 24-25',
+    dateTime: '2025-07-24',
     speakers
   },
 ]
@@ -100,7 +88,7 @@ export function Performances() {
             Performances
           </h2>
           <p className="mt-4 text-xl tracking-tight sm:text-2xl font-display text-blackish">
-            Jo-Anne Hart will perform <span className="italic">Friendship: A Love Story</span> this year at the <span className="italic">Tranås At The Fringe International Arts Festival</span> in Sweden, the <span className="italic">Providence Fringe Festival</span> in Rhode Island, and the <span className="italic">Oslo Fringe Performing Arts Festival</span> in Norway.
+            Jo-Anne Hart will perform <span className="italic">Travel "Whore": The backside of international relations</span> this year at the <span className="italic">Teatro ECAS Fringe Festival</span> in Rhode Island.
           </p>
         </div>
         <TabGroup
@@ -166,7 +154,7 @@ export function Performances() {
                       // style={{clipPath: `url(#${id}-${speakerIndex % 3})`}}
                       >
                         <Image
-                          className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"
+                          className="grayscale absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"
                           src={speaker.image}
                           alt=""
                           priority

@@ -321,6 +321,27 @@ export function News() {
               </h3>
               <div className="mt-4 flex gap-1 font-display text-xl tracking-tight text-blackish sm:gap-6 sm:text-2xl">
                 <div>
+                  <p>Rhode Island Fringe Performance</p>
+                  <a
+                    className="italic underline underline-offset-2"
+                    href="https://web.ovationtix.com/trs/pr/1244526"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Travel "Whore": The backside of international relations
+                  </a>
+                  <p className="italic">
+                    Teatro ECAS Theater, Rhode Island
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="mt-8 text-2xl font-semibold tracking-tight text-blackish">
+                Past events
+              </h3>
+              <div className="mt-4 flex gap-1 font-display text-xl tracking-tight text-blackish sm:gap-6 sm:text-2xl">
+                <div>
                   <p>Oslo Fringe Performance</p>
                   <a
                     className="italic underline underline-offset-2"
@@ -333,7 +354,6 @@ export function News() {
                   <p className="italic">
                     Salt Theater, Den Arktiske Hovedscena, Oslo
                   </p>
-                  <p>September 7, 2024 @ 2pm</p>
                 </div>
                 <Image
                   alt=""
@@ -341,11 +361,6 @@ export function News() {
                   src={osfrImg}
                 />
               </div>
-            </div>
-            <div>
-              <h3 className="mt-8 text-2xl font-semibold tracking-tight text-blackish">
-                Past events
-              </h3>
               <div className="mt-4 font-display text-xl tracking-tight text-blackish sm:text-2xl">
                 <p>Tranås At The Fringe International Arts Festival</p>
               </div>

@@ -30,7 +30,9 @@ export function BuyTickets() {
               </p>
               <p className="mt-6 text-lg tracking-tight text-whitish">
                 Don’t miss Jo-Anne Hart’s solo performance,{' '}
-                <span className="italic">Friendship: A Love Story</span>.
+                <span className="italic">
+Travel Whore: The Backside of International Relations
+</span>.
               </p>
             </div>
             <form className="flex flex-1 flex-col items-start gap-12 self-end justify-self-center">
@@ -41,7 +43,7 @@ export function BuyTickets() {
               />
               <RedButton
                 className="mx-4 lg:mx-0"
-                href="https://www.oslofringe.no/friendship-a-love-story"
+                href="https://web.ovationtix.com/trs/pr/1244526"
                 target="_blank"
               >
                 Get your tickets <ArrowRightIcon className="ml-2 h-6 w-6" />
