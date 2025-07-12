@@ -1,6 +1,6 @@
 import { RedButton } from '@/components/Button'
 import { Container } from '@/components/Container'
-import envelopeImg from '@/images/oslo-fringe-envelope.jpg'
+import fringePvdLogo from '@/images/fringe-pvd-logo.png'
 import Image from 'next/image'
 
 function ArrowRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -21,7 +21,7 @@ function ArrowRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export function BuyTickets() {
   return (
     <section id="buy-tickets" aria-label="Buy tickets">
-      <Container>
+      <Container className="md:mt-20">
         <div className="relative -mx-4 overflow-hidden bg-blackish px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-xl md:px-16 xl:px-24 xl:py-36">
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-24 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
@@ -35,11 +35,11 @@ Travel “Whore”: The Backside of International Relations
 </span>.
               </p>
             </div>
-            <form className="flex flex-1 flex-col items-start gap-12 self-end justify-self-center">
+            <form className="flex flex-1 flex-col items-start gap-8 self-end justify-self-center">
               <Image
-                src={envelopeImg}
+                src={fringePvdLogo}
                 alt=""
-                className="rounded-sm px-4 shadow-lg lg:px-0"
+                className="rounded-sm px-4 lg:px-0"
               />
               <RedButton
                 className="mx-4 lg:mx-0"

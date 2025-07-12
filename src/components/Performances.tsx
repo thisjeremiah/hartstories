@@ -26,7 +26,7 @@ const speakers = [
 const days = [
   {
     name: 'Rhode Island',
-    date: 'June 24-25',
+    date: 'July 24-25',
     dateTime: '2025-07-24',
     speakers
   },
@@ -88,7 +88,8 @@ export function Performances() {
             Performances
           </h2>
           <p className="mt-4 text-xl tracking-tight sm:text-2xl font-display text-blackish">
-            Jo-Anne Hart will perform <span className="italic">Travel “Whore”: The backside of international relations</span> this year at the <span className="italic">Teatro ECAS Fringe Festival</span> in Rhode Island.
+            Jo-Anne Hart will perform <span className="italic">Travel “Whore”: The backside of international relations</span> this year at the <span className="italic">FringePVD Festival</span>.
+            Two performances at Teatro ECAS in Providence.
           </p>
         </div>
         <TabGroup
@@ -154,7 +155,7 @@ export function Performances() {
                       // style={{clipPath: `url(#${id}-${speakerIndex % 3})`}}
                       >
                         <Image
-                          className="grayscale absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"
+                          className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"
                           src={speaker.image}
                           alt=""
                           priority

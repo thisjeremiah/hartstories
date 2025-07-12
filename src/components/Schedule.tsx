@@ -317,7 +317,7 @@ export function DescriptionOfPiece() {
             Finding the funny in foreign policy. In this solo storytelling romp, Jo-Anne Hart uses her real experiences (including being taken for a prostitute) in settings including the end days of the Soviet Union; dining with the President of Iran; and landing on an aircraft carrier at sea to brief US naval leaders – to show us the laugh-out-loud backstage of missteps, insecurities, and costuming disasters. Come cringe, howl, and gape at these confessions from a hard-working travel whore.​
           </p>
         </div>
-        <Image alt="" className="grayscale w-full mx-auto max-w-[30rem] md:w-[20rem] lg:w-[30rem] rounded-xl" src={joAnneImage3} />
+        <Image alt="" className="w-full mx-auto max-w-[30rem] md:w-[20rem] lg:w-[30rem] rounded-xl" src={joAnneImage3} />
       </Container>
       {
         // <div className="relative mt-14 sm:mt-24">

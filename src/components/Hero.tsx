@@ -22,17 +22,7 @@ export function Hero() {
           />
           <div className="mt-6 space-y-6 font-display text-xl tracking-tight text-blackish sm:text-2xl">
             <p>
-              Experience Jo-Anne Hart’s solo performance,{' '}
-              <span className="italic">Travel “Whore”: The backside of international relations </span>
-              — a
-              powerful exploration of empathy, trauma, and transformation
-              through storytelling.
-            </p>
-            <p>
-              Winner of the <span className="italic">Grand Slam Prize</span> at
-              the KO Festival of Performance 2022 and a storyteller on the{' '}
-              <span className="italic">Moth</span> stage, Jo-Anne brings her
-              real life tale of love, bravery, and enduring friendship to life.
+              Finding the funny in foreign policy. In this solo storytelling romp, Jo-Anne Hart uses her real experiences (including being taken for a prostitute) in settings including the end days of the Soviet Union; dining with the President of Iran; and landing on an aircraft carrier at sea to brief US naval leaders – to show us the laugh-out-loud backstage of missteps, insecurities, and costuming disasters. Come cringe, howl, and gape at these confessions from a hard-working travel whore.​
             </p>
           </div>
           {
